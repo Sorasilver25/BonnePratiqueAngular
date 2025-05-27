@@ -1,5 +1,5 @@
 
-# 📦 Angular SVG Icon Service
+# Angular SVG Icon Service
 
 Un service Angular minimaliste pour centraliser l'enregistrement des icônes SVG personnalisées avec `MatIconRegistry`.
 
@@ -25,7 +25,7 @@ src/
 
 ---
 
-## 💡 Service Angular
+## Service Angular
 
 ```ts
 import { Injectable } from '@angular/core';
@@ -41,7 +41,7 @@ export class SvgIconService {
     'trash',
     'image',
     'board'
-    // ➕ Ajoute ici d'autres noms de fichiers SVG sans extension
+    // Ajouter ici d'autres noms de fichiers SVG sans extension
   ];
 
   constructor(
@@ -64,7 +64,7 @@ export class SvgIconService {
 
 ---
 
-## 🧪 Exemple d'utilisation HTML
+## Exemple d'utilisation HTML
 
 ```html
 <mat-icon svgIcon="calendar"></mat-icon>
@@ -74,7 +74,7 @@ export class SvgIconService {
 
 ---
 
-## ✅ Prérequis
+## Prérequis
 
 Assure-toi que ton module Angular importe bien `MatIconModule` depuis `@angular/material/icon`.
 
@@ -92,7 +92,7 @@ export class AppModule { }
 
 ---
 
-## 📝 Astuce bonus
+## Astuce bonus
 
 Pour une solution plus dynamique, tu peux charger les noms d’icônes via un fichier JSON (`assets/icons/icons.json`) et utiliser `HttpClient` dans le service pour enregistrer les icônes.
 
