@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 40px;
+  background: #f0f2f5;
+  color: #333;
+}
+h1, h2, h3 {
+  color: #2c3e50;
+}
+code, pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 10px;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 20px;
+  border-left: 4px solid #007acc;
+  white-space: pre-wrap;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+.file-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #2980b9;
+}
+section {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+ul li::marker {
+  color: #3498db;
+}
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #2c3e50;
+}
+details {
+  margin-bottom: 20px;
+}
+.purple { color: #c586c0; }
+.blue { color: #569cd6; }
+.green { color: #4ec9b0; }
+.lightblue { color: #9cdcfe; }
+
+header {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.navbar a.active, .navbar a:hover {
+  background: #f0f2f5;
+  text-decoration: underline;
+}
+footer {
+  margin-top: 60px;
+  padding: 20px 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.95em;
+}
+@media (max-width: 700px) {
+  body { padding: 10px; }
+  header { flex-direction: column; align-items: flex-start; }
+  .navbar { flex-direction: column; gap: 10px; }
+}
